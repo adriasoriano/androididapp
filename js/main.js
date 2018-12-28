@@ -29,6 +29,8 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
         
+        var ident
+        
         var idtel = device.uuid;
         alert(idtel);
          $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b>");
@@ -195,6 +197,7 @@ function seleccionEvento(){
 $().ready(function(){
     //console.log("jquery ready");
     alert('cargado');
+    alert(device.uuid);
 
     // seleccionEvento();
 
