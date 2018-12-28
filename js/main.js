@@ -196,7 +196,7 @@ function seleccionEvento(){
 
 $().ready(function(){
     //console.log("jquery ready");
-    alert('cargado');
+    alert('cargadoooo');
     alert(device.uuid);
 
     // seleccionEvento();
