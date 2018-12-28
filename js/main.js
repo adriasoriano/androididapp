@@ -31,6 +31,8 @@ var app = {
         
         var idtel = device.uuid;
         alert(idtel);
+         $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b>");
+            
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
