@@ -15,6 +15,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         
+        
     },
     // deviceready Event Handler
     //
@@ -23,6 +24,7 @@ var app = {
     onDeviceReady: function() {
         var idtel = device.uuid;
         alert(idtel);
+        $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b>");
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
