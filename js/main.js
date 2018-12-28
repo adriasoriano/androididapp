@@ -24,7 +24,7 @@ var app = {
     onDeviceReady: function() {
         var idtel = device.uuid;
         alert(idtel);
-        $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b>");
+        $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b><br>NAME: "+device.name);
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -32,12 +32,6 @@ var app = {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-        
-        
-        var idtel = device.uuid;
-        alert(idtel);
-         $( "#identificador" ).html( "<b>ANDROID ID: "+idtel+"</b>");
-            
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
@@ -199,8 +193,7 @@ function seleccionEvento(){
 
 $().ready(function(){
     //console.log("jquery ready");
-    alert('cargadoooo');
-    alert(device.uuid);
+    
 
     // seleccionEvento();
 
